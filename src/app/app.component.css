@@ -1,0 +1,12 @@
+h1 {
+    color: #369;
+}
+
+h2 small {
+    font-size: 15px;
+}
+
+a, a:focus {
+    text-decoration: none;
+    color: #369;
+}
