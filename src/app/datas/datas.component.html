@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let data of datas">
+        <tr *ngFor="let data of datas | paginate: { itemsPerPage: 5, currentPage: p }">
             <td>{{ data.userId }}</td>
             <td>{{ data.id }}</td>
             <td>{{ data.title }}</td>
@@ -16,3 +16,6 @@
         </tr>
     </tbody>
 </table>
+<div style="text-align:center">
+    <pagination-controls (pageChange)= "p =$event"></pagination-controls>
+</div>

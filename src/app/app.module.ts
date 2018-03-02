@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DatasComponent } from './datas/datas.component';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
